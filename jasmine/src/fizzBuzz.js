@@ -7,6 +7,8 @@ Fizzbuzz.prototype.go = function (number) {
     return 'Fizz'
   } else if (this._isDivisibleBy(5, number)) {
     return 'Buzz'
+  } else {
+    return number
   }
 };
 
