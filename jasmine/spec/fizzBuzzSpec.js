@@ -6,6 +6,20 @@ describe('Fizzbuzz', function(){
     fizzbuzz = new Fizzbuzz();
   });
 
+  describe('when playing returns', function() {
+
+    describe('Fizz for multiples of 3', function() {
+
+      it('Fizz when given 3', function() {
+        expect(fizzbuzz.go(3)).toEqual('Fizz');
+      });
+
+      it('Fizz when given 6', function() {
+        expect(fizzbuzz.go(6)).toEqual('Fizz');
+      });
+    });
+  });
+
   describe('knows when a number is', function() {
 
     it('divisible by 3', function() {
