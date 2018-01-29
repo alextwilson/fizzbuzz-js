@@ -21,12 +21,23 @@ describe('Fizzbuzz', function(){
 
     describe('Buzz for multiples of 5', function() {
 
-      it('Fizz when given 3', function() {
+      it('Fizz when given 5', function() {
         expect(fizzbuzz.go(5)).toEqual('Buzz');
       });
 
-      it('Fizz when given 6', function() {
+      it('Fizz when given 10', function() {
         expect(fizzbuzz.go(10)).toEqual('Buzz');
+      });
+    });
+
+    describe('FizzBuzz for multiples of 15', function() {
+
+      it('Fizz when given 15', function() {
+        expect(fizzbuzz.go(15)).toEqual('FizzBuzz');
+      });
+
+      it('Fizz when given 30', function() {
+        expect(fizzbuzz.go(30)).toEqual('FizzBuzz');
       });
     });
   });
