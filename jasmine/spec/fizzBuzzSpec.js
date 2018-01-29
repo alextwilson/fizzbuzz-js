@@ -18,6 +18,17 @@ describe('Fizzbuzz', function(){
         expect(fizzbuzz.go(6)).toEqual('Fizz');
       });
     });
+
+    describe('Buzz for multiples of 5', function() {
+
+      it('Fizz when given 3', function() {
+        expect(fizzbuzz.go(5)).toEqual('Buzz');
+      });
+
+      it('Fizz when given 6', function() {
+        expect(fizzbuzz.go(10)).toEqual('Buzz');
+      });
+    });
   });
 
   describe('knows when a number is', function() {
