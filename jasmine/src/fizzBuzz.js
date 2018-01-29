@@ -1,14 +1,14 @@
-var Fizzbuzz = function() {};
+var Fizzbuzz = function () {};
 
 Fizzbuzz.prototype.go = function (number) {
   if (this._isDivisibleBy(15, number)) {
-    return 'FizzBuzz'
+    return "FizzBuzz";
   } else if (this._isDivisibleBy(3, number)) {
-    return 'Fizz'
+    return "Fizz";
   } else if (this._isDivisibleBy(5, number)) {
-    return 'Buzz'
+    return "Buzz";
   } else {
-    return number
+    return number;
   }
 };
 
